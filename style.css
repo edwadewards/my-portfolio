@@ -613,20 +613,13 @@ nav > a:hover,
     max-height: 320px;
   }
   .mobile-card {
-    max-width: 380px;
+    max-width: 360px;
     padding: 2em .2em;
   }
+  .mobile-card__details > div {
+    margin-bottom: 1em;
+  }
   .mobile-card__img {
-    max-width: 370px;
+    max-width: 360px;
   }
 }
-
-/* @media (max-width: 375px) {
-  .mobile-card {
-    padding: 1em .2em;
-    max-width: 280px;
-  }
-  .mobile-card__img {
-    max-width: 240px;
-  }
-} */
