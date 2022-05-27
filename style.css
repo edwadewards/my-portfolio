@@ -63,7 +63,7 @@ article, section {
   background: linear-gradient(rgba(202, 197, 235, .6), rgba(247, 193, 244, .6));
   border: 1em solid #efefef;
   border-radius: 20px;
-  
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -611,6 +611,6 @@ nav > a:hover,
     max-height: 320px;
   }
   .mobile-card {
-    max-width: 380px;
+    max-width: 320px;
   }
 }
