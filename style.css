@@ -614,7 +614,7 @@ nav > a:hover,
   }
   .mobile-card {
     max-width: 380px;
-    padding: 1em .2em;
+    padding: 2em .2em;
   }
   .mobile-card__img {
     max-width: 370px;
