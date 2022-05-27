@@ -18,6 +18,7 @@
 
 body {
   background-color: #efefef;
+  overflow-x: hidden;
 }
 
 html {
@@ -56,6 +57,7 @@ article, section {
 /* Hero Styles */
 .hero {
   height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
   padding-inline: clamp(1em, 1.5em + 2vw, 7em);
   background: linear-gradient(rgba(202, 197, 235, .6), rgba(247, 193, 244, .6));
@@ -602,4 +604,13 @@ nav > a:hover,
 
 .contact-btn > i:hover {
   color:rgba(21, 1, 59, .75);
+}
+
+@media (max-width: 400px) {
+  .img-box > img {
+    max-height: 320px;
+  }
+  .mobile-card {
+    max-width: 380px;
+  }
 }
