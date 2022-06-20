@@ -3,298 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="img/we-logo.png">
+  <link rel="icon" type="image/x-icon" href="img/we_logo.png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Wade Edwards</title>
 </head>
 <body>
-  <main class="hero">
-    <div class="mobile-menu">
-      <img src="img/we-logo.png" alt="comic-fonts" border="0" class="logo">
-      <span class="divider logo-divider">|</span>
-      <p class="menu">menu</p>
-      <p class="close">close</p>
+  <div class="container">
+    <div class="home-tab tab active-tab">
+      <div class="logo-btn">
+        <img src="img/we-logo.png" alt="wade edwards logo">
+      </div>
+      <section class="home-content tab-content">
+        <div class="hero">
+          <div class="hero-intro">
+            <p>Hello, my <br> name is <span class="bold">Wade Edwards</span></p>
+            <p>
+              I'm a <span class="bold">frontend developer</span> from Gadsden, Alabama.
+            </p>
+            <nav>
+              <a href="resume.pdf" target="_blank" title="opens in new tab as downloadable PDF">Resume</a>
+              <span class="divider">|</span>
+              <a href="http://github.com/edwadewards" target="_blank" rel="noopener noreferrer">Github</a>
+              <span class="divider">|</span>
+              <a href="https://www.linkedin.com/in/wadecedwards/" target="_blank">LinkedIn</a>
+            </nav>
+          </div>
+          <div class="img-box">
+            <img src="img/cartoon.jpeg" alt="graphic of wade edwards">
+          </div>
+        </div>
+        <article class="about">
+          <h4 class="fade-in slide-up">About me</h4>
+          <p class="fade-in slide-up">I am a self/community taught web developer with freelance experience building a website for the East Tennessee Relic & Coin Hunters Club. After spending my 20s working various fast food and factory jobs that didn't suit me and didn't challenge me I have finally found what I am supposed to be doing.</p>
+          <h4 class="fade-in slide-up">Why I enjoy web development</h4>
+          <p class="fade-in slide-up">The pride and fulfillment I feel creating something for people that is functional, fun to use and nice to look at. The challenge of problem-solving and the accomplishment of solving it is what I have always wanted from the professional side of my life.</p>
+          <h4 class="fade-in slide-up">Technologies I know</h4>
+          <p class="fade-in slide-up">HTML5, CSS3, JavaScript (ES6), Git, Bootstrap, Netlify</p>
+          <h4 class="fade-in slide-up">TL;DR</h4>
+          <p class="fade-in slide-up">I <i class="fa-solid fa-heart"></i> to code.</p>
+        </article>
+        <div class="contact">
+          <div class="contact-info">
+            <h3>Send me an electronic mail</h3>
+            <p>Thank you for taking the time to view my website. If you're hiring and enjoyed my work, please fill out the form below. I look forward to hearing from you.</p>
+            <ul class="contact-methods">
+              <li>
+                <i class="fa-brands fa-telegram"></i> wadecedwards@gmail.com
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i> (256) 399-8722
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i> 
+                <a href="http://github.com/edwadewards" target="_blank" rel="noopener noreferrer">Github</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin-in"></i> 
+                <a href="https://www.linkedin.com/in/wadecedwards/" target="_blank">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form action="https://formsubmit.co/wadecedwards@gmail.com" method="POST">
+              <label for="name">Your name *</label>
+              <input type="text" name="name" required>
+              <label for="email">Your email *</label>
+              <input type="email" name="email" required>
+              <label for="subject">Subject</label>
+              <input type="text" name="subject">
+              <label for="message">Your Message *</label>
+              <textarea name="message" rows="6" required></textarea>
+              <button type="submit" id="submit-btn" class="contact-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-    <nav>  
-      <a href="#about">About</a>
-      <span class="divider">|</span>
-      <a href="#projects">Projects</a>
-      <span class="divider">|</span>
-      <a href="#contact">Contact</a>
-      <span class="divider">|</span>
-      <a href="resume.pdf" target="_blank">Resume</a>
-      <span class="divider">|</span>
-      <a href="http://github.com/edwadewards" target="_blank" rel="noopener noreferrer">Github</a>
-      <span class="divider">|</span>
-      <a href="https://www.linkedin.com/in/wadecedwards/" target="_blank">LinkedIn</a>
-    </nav>
-    <div class="hero-content">
-      <p>Hello, my <br> name is <span class="bold">Wade Edwards</span></p>
-      <p>
-        I'm a <span class="bold">frontend developer</span> from Gadsden, Alabama.
-      </p>
+    <div class="starbucks-tab tab">
+      <p class="tab-title">Starbucks</p>
+      <section class="starbucks-content tab-content project-content">
+        <div class="project-img">
+          <img src="img/starbucks_preview.gif" alt="preview of starbucks clone website">
+        </div>
+        <div class="project-description">
+          <header>
+            <h3>Starbucks Clone</h3>
+            <ul class="project-tools">
+              <li><em>HTML</em></li>
+              <li><em>CSS</em></li>
+              <li><em>JavaScript</em></li>
+            </ul>
+          </header>
+          <article>
+            <p>
+              This website is a recreation of the Starbucks rewards page from their website. Making this site was a blast and really sharpened my skills with making responsive sites. The most challenging aspect was using Javascript to create the rewards stars slideshow with corresponding tabs.
+            </p>
+          </article>
+          <div class="action-links">
+            <a href="https://edwadewards.github.io/Starbucks-Clone/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://github.com/edwadewards/Starbucks-Clone" target="_blank" rel="noopener noreferrer">Github</a>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="img-box">
-      <img src="img/cartoon.jpeg" alt="graphic of wade edwards">
+    <div class="etrach-tab tab">
+      <p class="tab-title">East Tennessee Relic & Coin Hunters Club</p>
+      <section class="etrach-content tab-content project-content">
+        <div class="project-img">
+          <img src="img/etrach_preview.gif" alt="preview of relic club website">
+        </div>
+        <div class="project-description">
+          <header>
+            <h3>East Tennessee Relic & Coin Hunters Club</h3>
+            <ul class="project-tools">
+              <li><em>HTML</em></li>
+              <li><em>CSS</em></li>
+              <li><em>JavaScript</em></li>
+            </ul>
+          </header>
+          <article>
+            <p>
+              My first professional coding job! The club treasurer asked me to recreate their website and find them a cheaper domain host. I moved them from Wix to bihira.com, saving them around $100 annually. For the site itself, I remade it completely from scratch and was given complete control of design. I still update content for them from time to time.
+            </p>
+          </article>
+          <div class="action-links">
+            <a href="https://www.etrac-h.com/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://github.com/edwadewards/etrach" target="_blank" rel="noopener noreferrer">Github</a>
+          </div>
+        </div>
+      </section>
     </div>
-  </main>
-  <div class="mobile-menu-page">
-    <div>
-      <a href="#about">About</a>
-      <p>This is the part where I ramble about myself.</p>
-    </div>
-    <div>
-      <a href="#projects">Projects</a>
-      <p>Check out my work.</p>
-    </div>
-    <div>
-      <a href="#contact">Contact</a>
-      <p>I am available for work.</p>
-    </div>
-    <div>
-      <a href="#">Resume</a>
-      <p>Opens in new tab as downloadable PDF</p>
-    </div>
-    <div>
-      <a href="http://github.com/edwadewards" target="_blank" rel="noopener noreferrer">Github</a>
-      <p>See under the hood of my projects.</p>
-    </div>
-    <div>
-      <a href="https://www.linkedin.com/in/wadecedwards/" target="_blank">LinkedIn</a>
-      <p>Just to reiterate, I am available for work.</p>
+    <div class="th-tab tab">
+      <p class="tab-title">Tool House</p>
+      <section class="th-content tab-content project-content">
+        <div class="project-img">
+          <img src="img/tool-house_preview.gif" alt="preview of tool house website">
+        </div>
+        <div class="project-description">
+          <header>
+            <h3>Tool House</h3>
+            <ul class="project-tools">
+              <li><em>HTML</em></li>
+              <li><em>CSS</em></li>
+              <li><em>JavaScript</em></li>
+              <li><em>API</em></li>
+              <li><em>Netlify</em></li>
+            </ul>
+          </header>
+          <article>
+            <p>
+              Tool House is a multipurpose utility app consisting of a weather dash, using an API service called Open Weather. A calculator, and an interchangeable weight convertor allowing the user to select between pounds, kilograms, grams and ounces, enter a number value, and receive instant conversion in the other three weights.
+            </p>
+          </article>
+          <div class="action-links">
+            <a href="https://tool-house.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://github.com/edwadewards/tool-house" target="_blank" rel="noopener noreferrer">Github</a>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-
-  <article class="about" id="about">
-    <h4 class="fade-in slide-up">About me</h4>
-    <p class="fade-in slide-up">I am a self/community taught web developer with freelance experience building a website for the East Tennessee Relic & Coin Hunters Club. After spending my 20s working various fast food and factory jobs that didn't suit me and didn't challenge me I have finally found what I am supposed to be doing.</p>
-    <h4 class="fade-in slide-up">Why I enjoy web development</h4>
-    <p class="fade-in slide-up">The pride and fulfillment I feel creating something for people that is functional, fun to use and nice to look at. The challenge of problem-solving and the accomplishment of solving it is what I have always wanted from the professional side of my life.</p>
-    <h4 class="fade-in slide-up">Technologies I know</h4>
-    <p class="fade-in slide-up">HTML5, CSS3, JavaScript (ES6), Git, Bootstrap, Netlify</p>
-    <h4 class="fade-in slide-up">TL;DR</h4>
-    <p class="fade-in slide-up">I <i class="fa-solid fa-heart"></i> to code.</p>
-  </article>
-
-  <section class="projects-mobile">
-    <div class="mobile-card">
-      <div class="mobile-card__img">
-        <img src="img/starbucks-showcase.png" height="240" width="360">
-      </div>
-      <hr>
-      <div class="mobile-card__details">
-        <h2>Starbucks Clone</h2>
-        <p>
-          This website is a recreation of the Starbucks rewards page from their website. Making this site was a blast and really sharpened my skills with making responsive sites. The most challenging aspect was using Javascript to create the rewards stars slideshow with corresponding tabs.
-        </p>
-        <div>
-          <a href="https://edwadewards.github.io/Starbucks-Clone/" class="btn-starbucks">Website</a>
-          <a href="https://github.com/edwadewards/Starbucks-Clone" class="btn-starbucks">Github</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile-card">
-      <div class="mobile-card__img">
-        <img src="img/etrach-showcase.png" height="240" width="360">
-      </div>
-      <hr>
-      <div class="mobile-card__details">
-        <h2>East Tennessee Relic & Coin Hunters Club</h2>
-        <p>
-          My first professional coding job! The club treasurer asked me to recreate their website and find them a cheaper domain host. I moved them from Wix to bihira.com, saving them around $100 annually. For the site itself, I remade it completely from scratch and was given complete control of design. I still update content for them monthly.
-        </p>
-        <div>
-          <a href="https://www.etrac-h.com/" class="btn-etrach">Website</a>
-          <a href="https://github.com/edwadewards/etrach" class="btn-etrach">Github</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile-card">
-      <div class="mobile-card__img">
-        <img src="img/toolhouse-showcase.png" height="240" width="360">
-      </div>
-      <hr>
-      <div class="mobile-card__details">
-        <h2>Tool House</h2>
-        <p>
-          Tool House is a multipurpose utility app consisting of a weather dash, using an API service called Open Weather. A calculator, and an interchangeable weight convertor allowing the user to select between pounds, kilograms, grams and ounces, enter a number value, and receive instant conversion in the other three weights.
-        </p>
-        <div>
-          <a href="https://tool-house.netlify.app/" class="btn-th">Website</a>
-          <a href="https://github.com/edwadewards/tool-house" class="btn-th">Github</a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-    
-
-  <section class="projects" id="projects">
-    <div class="card-area">
-      <div class="card">
-        <div class="flip-card">
-            <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-front__tp--starbucks">
-                    <img src="img/starbucks.png" class="card-front__img" height="80" width="80">
-                    <h3 class="card-front__title">
-                      Starbucks Clone
-                    </h3>
-                  </div>  
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--starbucks">
-                      View more
-                    </p>
-                  </div>      
-                </div>
-                <div class="card-back">
-                    <div class="img-container">
-                      <img src="img/starbucks_preview.gif" height="400" width="480">
-                    </div>
-                </div>
-            </div>
-        </div>
-  
-        <div class="inside-page">
-            <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--starbucks">
-                  HTML - CSS - Javascript
-                </h3>
-                <p class="inside-page__text">
-                  This website is a recreation of the Starbucks rewards page from their website. Making this site was a blast and really sharpened my skills with making responsive sites. The most challenging aspect was using Javascript to create the rewards stars slideshow with corresponding tabs.
-                </p>
-                <div>
-                  <a href="https://edwadewards.github.io/Starbucks-Clone/" class="inside-page__btn inside-page__btn--starbucks">Website</a>
-                  <a href="https://github.com/edwadewards/Starbucks-Clone" class="inside-page__btn inside-page__btn--starbucks">Github</a>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="card-area">
-      <div class="card">
-        <div class="flip-card">
-            <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-front__tp--etrach">
-                    <img src="img/etrach.jpg" class="card-front__img" height="80" width="80">
-                    <h3 class="card-front__title">
-                      East Tennessee Relic & Coin Hunters Club
-                    </h3>
-                  </div>  
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--etrach">
-                      View more
-                    </p>
-                  </div>      
-                </div>
-                <div class="card-back">
-                  <div class="img-container">
-                    <img src="img/etrach_preview.gif" height="400" width="480">
-                  </div>
-                </div>
-            </div>
-        </div>
-  
-        <div class="inside-page">
-            <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--etrach">
-                  HTML - CSS - Javascript
-                </h3>
-                <p class="inside-page__text">
-                  My first professional coding job! The club treasurer asked me to recreate their website and find them a cheaper domain host. I moved them from Wix to bihira.com, saving them around $100 annually. For the site itself, I remade it completely from scratch and was given complete control of design. I still update content for them monthly.
-                </p>
-                <div>
-                  <a href="https://www.etrac-h.com/" class="inside-page__btn inside-page__btn--etrach">Website</a>
-                  <a href="https://github.com/edwadewards/etrach" class="inside-page__btn inside-page__btn--etrach">Github</a>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="card-area">
-      <div class="card">
-        <div class="flip-card">
-            <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-front__tp--th">
-                    <img src="img/th-logo.webp" class="card-front__img card-front__img--th" height="80" width="80">
-                    <h3 class="card-front__title">
-                      Tool House
-                    </h3>
-                  </div>  
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--th">
-                      View more
-                    </p>
-                  </div>      
-                </div>
-                <div class="card-back">
-                  <div class="img-container">
-                    <img src="img/tool-house_preview.gif" height="400" width="480">
-                  </div>
-                </div>
-            </div>
-        </div>
-  
-        <div class="inside-page">
-            <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--th">
-                  HTML - CSS - Javascript - API - Netlify
-                </h3>
-                <p class="inside-page__text">
-                  Tool House is a multipurpose utility app consisting of a weather dash, using an API service called Open Weather. A calculator, and an interchangeable weight convertor allowing the user to select between pounds, kilograms, grams and ounces, enter a number value, and receive instant conversion in the other three weights.
-                </p>
-                <div>
-                  <a href="https://tool-house.netlify.app/" class="inside-page__btn inside-page__btn--th">Website</a>
-                  <a href="https://github.com/edwadewards/tool-house" class="inside-page__btn inside-page__btn--th">Github</a>
-                </div>
-            </div>
-        </div>
-      </div>  
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h3>Thank you for taking the time to view my website. If you're hiring and enjoyed my work, please fill out the form below. I look forward to hearing from you.</h3>
-    <form class="contact-form" action="https://formsubmit.co/wadecedwards@gmail.com" method="POST">
-      <div class="contact-form__inputs">
-        <div>
-          <div>
-            <label for="name">Your Name: *</label>
-            <input type="text" name="name" required>
-          </div>
-          <div>
-            <label for="email">Your Email: *</label>
-            <input type="email" name="email" required>
-          </div>
-          <div>
-            <label for="subject">Subject:</label>
-            <input type="text" name="subject">
-          </div>
-        </div>
-        <div>
-          <label for="message">Your Message: *</label>
-          <textarea name="message" rows="6" required></textarea>
-          <button type="submit" id="submit-btn" class="contact-btn"><i class="fa-brands fa-telegram"></i></button>
-        </div>
-      </div>
-    </form>
-  </section>
   
   <script src="main.js"></script>
 </body>
