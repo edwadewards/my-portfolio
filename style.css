@@ -471,6 +471,9 @@ nav > a:hover {
     padding: 1em;
     margin-bottom: 4em;
   }
+  .hero-intro {
+    padding: 0;
+  }
   .img-box > img {
     height: 180px;
   }
@@ -484,6 +487,7 @@ nav > a:hover {
   .project-description > header > h3 {
     font-size: 1.35rem;
     border: none;
+    width: auto;
   }
   .project-description, .project-description > header {
     display: flex;
