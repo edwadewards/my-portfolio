@@ -480,6 +480,8 @@ nav > a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .project-description > * {
     text-align: center;
   }
 }
