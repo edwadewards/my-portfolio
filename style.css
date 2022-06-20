@@ -464,14 +464,11 @@ nav > a:hover {
   .img-box > img {
     height: 180px;
   }
-  .hero-intro p:nth-of-type(1) {
+  .project-description > header > h3 {
     font-size: 1.25rem;
-  }
-  .hero-intro p:nth-of-type(2),
-  h3 {
-    font-size: 1rem;
-  }
-  p, a, li, span {
-    font-size: .85rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
