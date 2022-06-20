@@ -297,7 +297,7 @@ nav > a:hover {
   background: transparent;
   font-size: 18px;
   outline: none;
-  min-width: 40ch;
+  /* min-width: 40ch; */
 }
 
 .contact-btn {
@@ -390,6 +390,7 @@ nav > a:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
   }
   .home-content {
@@ -456,5 +457,21 @@ nav > a:hover {
   }
   .img-box > img {
     height: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-box > img {
+    height: 180px;
+  }
+  .hero-intro p:nth-of-type(1) {
+    font-size: 1.25rem;
+  }
+  .hero-intro p:nth-of-type(2),
+  h3 {
+    font-size: 1rem;
+  }
+  p, a, li, span {
+    font-size: .85rem;
   }
 }

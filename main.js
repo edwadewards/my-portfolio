@@ -27,6 +27,10 @@ fadeIn.forEach(element => {
 });
 
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
 const tabs = document.querySelectorAll('.tab');
 const homeTab = document.querySelector('.home-tab');
 
