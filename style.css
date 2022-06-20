@@ -471,14 +471,11 @@ nav > a:hover {
     padding: 1em;
     margin-bottom: 4em;
   }
-  .hero-intro {
+  .hero .hero-intro {
     padding: 0;
   }
   .img-box > img {
     height: 180px;
-  }
-  .contact {
-    padding: 1em 0;
   }
   .contact-info i {
     font-size: 1rem;
