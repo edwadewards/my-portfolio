@@ -468,16 +468,13 @@ nav > a:hover {
 
 @media (max-width: 400px) {
   .tab-title {
-    padding-top: .5em;
+    padding-top: 1em;
   }
   .hero {
     padding: 1em;
     margin-bottom: 4em;
   }
-  .hero {
-    padding: 1em .5em;
-  }
-  .hero .hero-intro {
+  .hero, .hero .hero-intro {
     padding: 0;
   }
   .img-box > img {
