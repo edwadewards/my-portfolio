@@ -471,10 +471,10 @@ nav > a:hover {
     padding-top: 1em;
   }
   .hero {
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
     margin-bottom: 4em;
   }
-  .hero, .hero .hero-intro {
+  .hero .hero-intro {
     padding: 0;
   }
   .img-box > img {
