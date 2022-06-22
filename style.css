@@ -133,7 +133,7 @@ html {
 }
 
 .starbucks-tab {
-  background-color: rgba(21, 1, 59, .8);
+  background-color: rgb(49, 13, 117);
 }
 
 .etrach-tab { 
@@ -329,7 +329,7 @@ nav > a:hover {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding-bottom: 1.25em;
+  padding-bottom: 2em;
 }
 
 .project-img {
@@ -438,8 +438,11 @@ nav > a:hover {
   .hero .hero-intro, .hero .img-box {
     padding: 0;
   }
+  .img-box {
+    padding-top: 20px;
+  }
   .img-box > img {
-    height: 320px;
+    height: 240px;
   }
   .tab-title {
     padding-left: 1em;
