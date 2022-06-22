@@ -53,6 +53,7 @@ html {
 
 .tab {
   display: flex;
+  flex-direction: column;
   width: 5%;
   will-change: width;
   transition: all 500ms ease;
@@ -78,7 +79,7 @@ html {
   transform-origin: left 80px;
   color: #fff;
   white-space: nowrap;
-  padding-top: 30px;
+  padding: 1.8em;
   width: max-content;
   height: max-content;
   font-size: 1rem;
@@ -88,6 +89,11 @@ html {
 
 .active-tab > .tab-title {
   transform: rotate(0);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  background-color: inherit;
 }
 
 .home-content {
@@ -96,7 +102,7 @@ html {
 }
 
 .tab-content {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: none;
 }
 
@@ -322,7 +328,7 @@ nav > a:hover {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding: 4em 2.5em;
+  padding-bottom: 1.25em;
 }
 
 .project-img {
@@ -345,15 +351,8 @@ nav > a:hover {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2em;
-  padding: 1em;
+  padding: 0 .5em;
   max-width: 900px;
-}
-
-.project-description > header > h3 {
-  font-size: clamp(1rem, 1rem + 1vw, 2rem);
-  border-bottom: 3px solid #fff;
-  margin-bottom: 10px;
-  width: max-content;
 }
 
 .project-description .project-tools {
@@ -393,15 +392,10 @@ nav > a:hover {
     height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
   }
-  .home-content {
-    padding-bottom: 25vh;
-  }
   .tab {
     width: 100%;
     height: 8%;
     overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
   }
   .active-tab {
     height: 76%;
@@ -419,50 +413,22 @@ nav > a:hover {
     box-shadow: 0 0 5px rgba(0 0 0 / .3);
     z-index: 5;
   }
-  .starbucks-tab {
-    z-index: 10;
-  }
-  .etrach-tab {
-    z-index: 11;
-  }
-  .th-tab {
-    z-index: 12;
-  }
-  .home-content {
-    width: 100%;
-    padding: 1em 1em 25vh 1em;
-  }
-  .hero {
-    height: 100%;
-    margin-top: 8%;
-  }
-  .project-content {
-    padding: 0 .5em;
-  }
-  .project-description {
-    padding: 0;
-    /* margin-bottom: 3em; */
-  }
-}
-
-@media (max-width: 740px) {
   .hero {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 3.25em 0 0 0;
+    margin: auto;
   }
-  .hero .hero-intro {
+  .hero .hero-intro, .hero .img-box {
+    padding: 0;
+  }
+  .home-content {
     padding: 1em;
-  }
-  .hero .img-box {
-    padding: 0 0 0 1em;
   }
   .img-box > img {
     height: 320px;
-  }
-  .project-content {
-    min-height: 90vh;
   }
 }
 
@@ -483,19 +449,5 @@ nav > a:hover {
   .contact-info i {
     font-size: 1rem;
     padding: .35em;
-  }
-  .project-description > header > h3 {
-    font-size: 1.35rem;
-    border: none;
-    width: auto;
-  }
-  .project-description, .project-description > header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .project-description > * {
-    text-align: center;
   }
 }
