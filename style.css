@@ -3,7 +3,7 @@
   --dark-purple: rgb(79, 2, 38);
   --alt-clr: rgb(168, 5, 54);
 
-  --slide-down: translateY(50px);
+  --slide-down: translateY(250px);
   --slide-up: translateY(0);
 }
 
@@ -29,7 +29,7 @@ html {
 /* intersection observer styles */
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 550ms 300ms ease;
 }
 
 .fade-in.appear {
@@ -38,7 +38,7 @@ html {
 
 .slide-up {
   transform: var(--slide-down);
-  transition: transform 400ms ease-in;
+  transition: transform 500ms ease;
 }
 
 .slide-up.appear {
@@ -328,7 +328,6 @@ nav > a:hover {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 2em;
   padding-bottom: 2em;
 }
 
@@ -360,6 +359,7 @@ nav > a:hover {
   display: flex;
   gap: 15px;
   list-style: none;
+  margin-bottom: 1em;
 }
 
 .project-tools > li,
